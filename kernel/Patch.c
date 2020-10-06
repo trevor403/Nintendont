@@ -1505,7 +1505,7 @@ void DoPatches( char *Buffer, u32 Length, u32 DiscOffset )
 	TRISetupGames();
 	if(TRIGame == TRI_NONE)
 	{
-		if(( TITLE_ID == 0x475858 ) || ( TITLE_ID == 0x474336 ) // Colosseum and XD
+		if(( TITLE_ID == 0x475858 ) || ( TITLE_ID == 0x474336 ) || ( TITLE_ID == 0x475832 ) // Colosseum and XD
 			|| ( GAME_ID == 0x5043534A && Length == 0x479900 ) // Colosseum Bonus
 			|| IsPokemonDemo() )
 		{
@@ -4121,7 +4121,7 @@ void DoPatches( char *Buffer, u32 Length, u32 DiscOffset )
 			dbgprintf("Patch:Patched Pokemon Colosseum Bonus NTSC-J Controller Bug\r\n");
 		}
 	}
-	else if( TITLE_ID == 0x475858 )	// Pokemon XD
+	else if( TITLE_ID == 0x475858 || TITLE_ID == 0x475832 )	// Pokemon XD
 	{
 		// Controller Invert Bug
 		if(read32(0x00100DA0) == 0x7CC000D0 && read32(0x00100DAC) == 0x7CC000D0)

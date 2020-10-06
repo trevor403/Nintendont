@@ -666,6 +666,7 @@ GXR-Mega Man X: Command Mission
 GXS-Sonic Adventure DX: Director's Cut
 GXU-Surf's Up
 GXX-Pokemon XD: Gale of Darkness
+GX2-Pokemon XG: NeXt Gen
 GY2-Donkey Konga 2
 GY3-Donkey Konga 3
 GYA-Barnyard
